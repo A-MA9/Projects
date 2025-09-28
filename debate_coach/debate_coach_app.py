@@ -11,7 +11,7 @@ from crewai import Agent, Task, Crew, Process, LLM
 llm = LLM(
     model="gemini/gemini-2.0-flash",
     temperature=0.9,
-    api_key=os.environ["GOOGLE_API_KEY"]
+    api_key = st.secrets["API_KEY"]
 )
 # -------------------------------
 # Define Agents
