@@ -11,6 +11,8 @@ The app simulates a **mock debate** between a user and an AI opponent. It also p
 
 Perfect for practicing debate structure, sharpening arguments, and improving communication.
 
+# Live Link: debate_coach(https://debate--coach.streamlit.app)
+
 ---
 
 ## 🚀 Features
