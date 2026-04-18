@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Prove You're Human - embedded article.">
   <title>Prove You're Human - The Still Room</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <style>
     .embedded-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
+      width: 100%;
+      max-width: none;
+      margin: 0;
       padding: 0;
     }
 
     .embedded-article {
       width: 100%;
-      min-height: 1200px;
+      min-height: 100vh;
       border: 0;
       display: block;
       background: #f7f4ee;
@@ -23,25 +25,6 @@
   </style>
 </head>
 <body>
-  <a class="skip-link ui" href="#content">Skip to content</a>
-
-  <header class="site-header">
-    <div class="header-inner ui">
-      <a class="brand" href="index.html" aria-label="The Still Room home">
-        <p class="brand-title">The Still Room</p>
-        <p class="brand-subtitle">A quiet reading room</p>
-      </a>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="archive.html">Archive</a></li>
-          <li><a href="wander.html">Wander</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
   <main id="content" class="embedded-wrap">
     <iframe
       id="captchaFrame"
@@ -51,10 +34,6 @@
       loading="lazy"
     ></iframe>
   </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner ui">© 2026 The Still Room</div>
-  </footer>
 
   <script>
     (function () {

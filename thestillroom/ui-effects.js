@@ -170,9 +170,22 @@
     }
   }
 
+  function bindStorageSync() {
+    window.addEventListener("storage", (event) => {
+      if (event.key === THEME_STORAGE_KEY && (event.newValue === DARK_THEME || event.newValue === LIGHT_THEME)) {
+        setTheme(event.newValue);
+      }
+
+      if (event.key === OPP_STORAGE_KEY) {
+        setOppEnabled(event.newValue === "true");
+      }
+    });
+  }
+
   function init() {
     installPointerTracking();
     bindUI();
+    bindStorageSync();
     setTheme(getSavedTheme());
     setOppEnabled(getSavedOppState());
   }
