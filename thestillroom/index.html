@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Still Room is a quiet reading space for writing on design and technology.">
+  <title>The Still Room</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link ui" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner ui">
+      <a class="brand" href="index.html" aria-label="The Still Room home">
+        <p class="brand-title">The Still Room</p>
+        <p class="brand-subtitle">A quiet reading room</p>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="wander.html">Wander</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="mode-controls ui" aria-label="Display controls">
+        <button id="themeToggle" class="mode-btn" type="button" aria-pressed="false">Dark</button>
+        <button id="torchToggle" class="mode-btn" type="button" aria-pressed="false">Torch</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="intro">
+      <h1>The Still Room</h1>
+      <p>This place does not move. It keeps a seat open, even when no one is reading. The writing changes. The room does not.</p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Recent writings</h2>
+      <ol id="recentWritings" class="article-list"></ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner ui">© 2026 The Still Room</div>
+  </footer>
+
+  <script src="writings-data.js" defer></script>
+  <script src="render-writings.js" defer></script>
+  <script src="ui-effects.js" defer></script>
+</body>
+</html>
